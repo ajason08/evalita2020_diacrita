@@ -1,2 +1,4 @@
-# evalita2020_diacrita
-Code used to perform the task
+# POS and Neighbor Based Distributional Models for Lexical Semantic Change in Diachronic Italian Corpora
+We present our systems and findings on unsupervised lexical semantic change for Italian language in the DIACR-Ita shared-task at EVALITA 2020. The task is to determine whether a target word has evolved its meaning with time only relying on raw-text from two time-specific datasets. We propose two models that represent the target words across the time periods to finally predict the changing words using threshold and voting schemes. Our first model solely relies on the part-of-speech usage and an ensemble of distance measures, while the second uses word embedding representation to extract the neighbors relative distances across spaces and propose "the average of absolute differences" to estimate lexical semantic change. Our models achieved competent result, ranking third in the DIACR-Ita competition. Furthermore, we experiment with the kneighbor parameter of our second model to compare the impact of using "the average of absolute differences" versus the cosine distance.
+
+This code include the models submitted and results obtain at https://diacr-ita.github.io/DIACR-Ita/ as part of http://www.evalita.it/2020/
